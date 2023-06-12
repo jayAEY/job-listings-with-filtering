@@ -16,7 +16,7 @@ body {
     width: 100vw;
     background-color: hsl(180, 52%, 96%);
     font-family: 'League Spartan', sans-serif;
-    font-size: 15px;
+    font-size: 11pt;
 }
 
 header {
@@ -149,6 +149,7 @@ main {
 }
 
 .company {
+    font-size: 11pt;
     font-weight: 700;
     margin-right: 14px;
     margin-top: 4px;
