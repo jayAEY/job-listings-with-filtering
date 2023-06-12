@@ -19,6 +19,10 @@ body {
     font-size: 15px;
 }
 
+header {
+    min-width: 100%;
+}
+
 #mobile-header {
     display: flex;
     min-width: 100%;
