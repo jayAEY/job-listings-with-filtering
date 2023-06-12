@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh ;
+    min-height: 100vh;
     width: 100vw;
     background-color: hsl(180, 52%, 96%);
     font-family: 'League Spartan', sans-serif;
@@ -66,7 +66,7 @@ body {
     color: hsl(180, 29%, 50%);
     align-items: center;
     justify-content: center;
-    border-radius: 3px; 
+    border-radius: 3px;
 }
 
 .tag-close {
@@ -74,7 +74,6 @@ body {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     vertical-align: text-bottom;
-    line-height: 1.;
     padding-left: 7px;
     padding-right: 7px;
     margin-left: 8px;
@@ -117,17 +116,22 @@ main {
 .job-panel {
     display: flex;
     flex-direction: column;
-    gap: 13px;
     padding: 20px;
     width: 90%;
     min-height: 100px;
     background-color: white;
     border-radius: 5px;
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.541);
+    box-shadow: 3px 8px 20px rgba(46, 100, 119, 0.26);
 }
 
 .featured {
     border-left: solid 6px hsl(180, 29%, 50%);
+}
+
+.non-tag-section {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
 }
 
 .logo {
@@ -135,7 +139,7 @@ main {
     width: 50px;
 }
 
-.company-section { 
+.company-section {
     display: flex;
     gap: 7px;
 }
@@ -154,18 +158,18 @@ main {
     color: white;
     align-items: center;
     justify-content: center;
-    border-radius: 30px;    
+    border-radius: 30px;
 }
 
 .featured-text {
     padding: 4px 8px 1px 8px;
     text-transform: uppercase;
     font-weight: 700;
-    background-color:black;
+    background-color: black;
     color: white;
     align-items: center;
     justify-content: center;
-    border-radius: 30px; 
+    border-radius: 30px;
 }
 
 .title {
@@ -174,6 +178,8 @@ main {
 }
 
 .description {
+    display: flex;
+    gap: 8px;
     color: hsl(180, 8%, 52%);
 }
 
@@ -186,7 +192,6 @@ main {
 .tag-section {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -10px;
 }
 
 .tag {
@@ -194,11 +199,12 @@ main {
     margin-top: 16px;
     margin-right: 16px;
     font-weight: 700;
-    background-color:  hsl(180, 31%, 95%);;
+    background-color: hsl(180, 31%, 95%);
+    ;
     color: hsl(180, 29%, 50%);
     align-items: center;
     justify-content: center;
-    border-radius: 3px; 
+    border-radius: 3px;
     transition: all 0.5s;
 }
 
@@ -209,11 +215,71 @@ main {
 }
 
 @media screen and (min-width: 800px) {
+    main {
+        gap: 20px;
+    }
+
     #mobile-header {
         display: none;
     }
 
     #desktop-header {
         display: flex;
-    }    
+    }
+
+    .job-panel {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 20px;
+    }
+
+    .non-tag-section {
+        margin-left: 80px;
+        gap: 6px;
+    }
+
+    .logo {
+        width: 65px;
+        position: absolute;
+        margin: auto 0;
+    }
+
+    .company {
+        margin-right: 6px;
+    }
+
+    .new {
+        font-size: 9pt;
+        padding: 5px 8px 0px 8px;
+    }
+
+    .featured-text {
+        font-size: 9pt;
+        padding: 5px 8px 0px 8px;
+    }
+
+    .title {
+        font-size: 14pt;
+    }
+
+    .description {
+        gap: 14px;
+    }
+
+    .tag-section {
+        margin: auto 0;
+        height: 20px;
+    }
+
+
+    .tag {
+        margin: 0;
+        margin-left: 15px;
+    }
+
+    .line {
+        display: none;
+    }
 }
