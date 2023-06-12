@@ -111,7 +111,7 @@ function createJobPanel(company, logo, isNew, featured, position, role, level, p
         <img alt="${company} logo" class="logo" src="${logo}">
         <div class="non-tag-section">
         <div class="company-section">
-            <p class="company">${company}</p>
+            <h1 class="company">${company}</h1>
             ${isNew ? `<p class="new">New!</p>` : ""}
             ${featured ? `<p class="featured-text">Featured</p>` : ""}
         </div>
